@@ -1,0 +1,1 @@
+export default function AlbumDetail(){return <div className="space-y-4"><h1 className="text-2xl font-semibold">照片墙</h1><div className="grid grid-cols-2 md:grid-cols-4 gap-3">{Array.from({length:8}).map((_,i)=><div key={i} className="card p-2"><div className="bg-rose-100 rounded-xl h-32"/><p className="text-xs mt-2">照片详情 {i+1}</p></div>)}</div></div>}
