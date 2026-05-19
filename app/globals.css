@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-body { @apply bg-background text-zinc-800; }
-.card { @apply bg-card border border-rose-100 rounded-2xl shadow-sm; }
-.timeline-line::before { content:""; @apply absolute left-3 top-0 h-full w-px bg-rose-200; }
+:root {
+  --theme-primary: #d9777f;
+  --theme-secondary: #f8dedd;
+  --theme-bg: #fffaf8;
+  --theme-card-border: #ffe4e6;
+}
+
+body {
+  background: var(--theme-bg);
+  @apply text-zinc-800;
+}
+
+.card {
+  border-color: var(--theme-card-border);
+  @apply rounded-2xl border bg-card shadow-sm;
+}
+
+.timeline-line::before {
+  content: "";
+  @apply absolute left-3 top-0 h-full w-px bg-rose-200;
+}

@@ -2,6 +2,11 @@
 
 温暖、简洁、浪漫、私密的情侣生活记录网站。
 
+## 新增体验
+- 页面主题色可在设置页一键切换（Rose / Ocean / Forest / Violet）
+- 页面语言支持中文 / English 切换
+- 设置页提供「一键部署」按钮，直接跳转 Vercel 创建部署
+
 ## 技术栈
 - Next.js App Router + TypeScript
 - Tailwind CSS + shadcn/ui 风格组件
