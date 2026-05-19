@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function AlbumsPage(){return <div className="space-y-4"><h1 className="text-2xl font-semibold">相册</h1><div className="card p-4">支持创建相册、上传照片、设置封面。</div><div className="grid grid-cols-2 md:grid-cols-4 gap-3">{[1,2,3,4,5,6].map(i=><Link href={`/albums/${i}`} key={i} className="card p-3 aspect-square flex items-end bg-gradient-to-br from-rose-100 to-pink-50">相册 {i}</Link>)}</div></div>}
